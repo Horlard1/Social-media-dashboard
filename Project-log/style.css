@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(230, 17%, 14%);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    max-width: 1440px;
+}
+.dark-mode{
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+}
+.holder{
+    background-position: 50px;
+}
+.container{
+    margin: 1rem auto;
+    width: 80%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 50px 10px;
+    
+}
+.content .left h2{
+    line-height: 25px;
+}
+.content .left p{
+    font-weight: 700;
+}
+.content .right{
+    display: flex;
+}
+.content .right p{
+    width: 70%;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 700;
+    align-self: center;
+    margin-right: 5px;
+}
+.content .right .toggle-btn{
+    width: 55px;
+    height: 25px;
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    border-radius: 20px;
+    padding: 3px;
+    align-self: center;
+    position: relative;
+}
+.inner-circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: hsl(228, 28%, 20%);
+    transition: 2ms linear;
+    position: absolute;
+}
+.dmode{
+    left: 50%;
+    background: white;
+    ;
+}
+.major{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    margin-bottom: 35px;
+    grid-template-rows: minmax(150px, auto);
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+.card{
+    width: 100%;
+}
+.cards{
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.darkmode{
+    background: hsl(228, 50%, 88%) !important;
+    
+}
+.darkmode:hover{
+    background: hsl(228, 12%, 44%);
+}
+
+.cards #fol{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 9px;
+}
+.twitter{
+    border-top: 2px solid hsl(203, 89%, 53%);
+}
+.instagram{
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-image-slice: 1;
+    border-radius: 5px;
+
+}
+.youtube{
+    border-top: 2px solid hsl(348, 97%, 39%);
+}
+.facebook{
+    border-top: 2px solid hsl(208, 92%, 53%);
+}
+.cards p{
+    word-spacing: 5px;
+    align-self: center;
+    margin-top: 5px;
+}
+.bigfig{
+    font-size: 30px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+}
+.cards #first{
+    align-self: center;
+    display: flex;
+    flex-flow: row;
+}
+
+.cards #first i{
+    margin-right: 10px;
+    align-self: flex-end;
+}
+.cards #first p{
+    align-self: center;
+    margin-bottom: 5px;
+}
+.cards #second{
+    margin-top: 20px;
+    align-self: center;
+    font-size: 10px;
+    display: flex;
+}
+#second i{
+    align-self: center;
+    margin-right: 5px;
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.second .upper{
+    margin-bottom: 20px;
+    font-weight: 700;
+    word-spacing: 2px;
+    margin-left: 25px;
+}
+.minor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, minmax(50px, auto));
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px 30px;
+    margin-left: -5px;
+    
+}
+.boxes{
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    background: hsl(228, 28%, 20%);
+
+}
+.box{
+    position: relative;
+    margin: 1em auto;
+    width: 80%;
+    height: 100px;
+}
+.box p{
+    position: absolute;
+    top: 3px;
+    left: 0;
+    font-size: 11px;
+    font-weight: 700;
+}
+.box i{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.box .fig{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+#final{
+    position: absolute;
+    bottom: 20px;
+    right: 28px;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxes #final i{
+    align-self: flex-start;
+    margin-right: 5px;
+}
+.boxes #final p{
+    align-self: flex-end;
+    
+}
+.low{
+    color: red;
+}
+.high{
+    color: hsl(163, 72%, 41%);
+}
+@media screen and (max-width: 800px){
+    .container{
+        width: 100%;
+    }
+    .second{
+        grid-gap: 10px;
+    }
+    .content .right .toggle-btn{
+        margin-right: 20px;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px){
+    .content{
+        flex-direction: column;
+    }
+    .content .right{
+        border-top: 2px solid rgb(177, 176, 176);
+
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    .content .right p, .toggle-btn{
+        margin-top: 15px;
+    }
+    .major{
+        grid-template-columns: 1fr;
+        width: 100%;
+        
+    }
+    .upper p{
+        text-align: left;
+    }
+    .minor{
+        text-align: center;
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+    }
+    .boxes p{
+        justify-self: center;
+    }
+    .boxes .fig.a{
+        font-size: 15px;
+        justify-self: center;
+    }
+    .cards #second{
+        margin-bottom: 8px;
+    }
+}
