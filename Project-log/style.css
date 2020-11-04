@@ -97,7 +97,7 @@ body{
     
 }
 .darkmode:hover{
-    background: hsl(228, 12%, 44%);
+    background: hsl(228, 12%, 44%) !important;
 }
 
 .cards #fol{
